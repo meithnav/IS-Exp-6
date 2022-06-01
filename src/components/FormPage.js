@@ -54,6 +54,15 @@ export default function FormPage() {
       return;
     }
 
+
+    // VALIDATE CONTACT
+    let regContact = /^[789]\d{9}$/;
+    if (!regContact.test(loginData.contact)) {
+      toast("Incorrect Contact Number!!");
+      return;
+    }
+
+
     // VALIDATE EMAIL
     let regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!regEmail.test(loginData.email)) {
@@ -61,6 +70,7 @@ export default function FormPage() {
       return;
     }
 
+ 
     //  PASS & CPASS
     if (loginData.pass === "" || loginData.cpass === "") {
       toast("Password and Confirm Password do not match!!");
@@ -78,6 +88,7 @@ export default function FormPage() {
     //   .catch((err) => {
     //     console.log(err);
     //   });
+
   };
 
   return (
