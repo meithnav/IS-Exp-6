@@ -125,6 +125,16 @@ export default function LoginFormPage({ setPage }) {
                   type="submit"
                   className="submit_btn"
                   variant="contained"
+                  onClick={() => setPage("signup")}
+                  style={{marginRight:15}}
+                >
+                  SIGN UP
+                </Button>
+
+                <Button
+                  type="submit"
+                  className="submit_btn"
+                  variant="contained"
                   onClick={handleSubmit}
                 >
                   SUBMIT
@@ -132,9 +142,6 @@ export default function LoginFormPage({ setPage }) {
               </div>
             </div>
           </form>
-          <h3 onClick={() => setPage("signup")}>
-            <span> Signup instead </span>
-          </h3>
         </div>
 
         <div className="Banner">

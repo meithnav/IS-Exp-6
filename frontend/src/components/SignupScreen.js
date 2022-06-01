@@ -71,6 +71,15 @@ export default function LoginFormPage({ setPage }) {
       return;
     }
 
+    // VALIDATE PASSWORD
+    let regPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!regPass.test(loginData.pass)) {
+      toast(
+        "Please follow the password pattern!!\nMinimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character."
+      );
+      return;
+    }
+
     //  PASS & CPASS
     if (loginData.pass === "" || loginData.cpass === "") {
       toast("Password and Confirm Password do not match!!");
@@ -209,6 +218,16 @@ export default function LoginFormPage({ setPage }) {
                   type="submit"
                   className="submit_btn"
                   variant="contained"
+                  onClick={() => setPage("login")}
+                  style={{ marginRight: 15 }}
+                >
+                  LOGIN
+                </Button>
+
+                <Button
+                  type="submit"
+                  className="submit_btn"
+                  variant="contained"
                   onClick={handleSubmit}
                 >
                   SUBMIT
@@ -216,9 +235,6 @@ export default function LoginFormPage({ setPage }) {
               </div>
             </div>
           </form>
-          <h3 onClick={() => setPage("login")}>
-            <span> Login instead </span>
-          </h3>
         </div>
 
         <div className="Banner">
