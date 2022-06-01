@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+
+:root {
+  --baseFont: sans-serif;
+}
+
+.loginBox {
+  display: flow-root;
+  position: relative;
+  width: calc(70% - 0px);
+  margin: 50px auto;
+  margin-top: 60px;
+  height: fit-content;
+  padding: 60px 30px;
+  background-image: linear-gradient(to bottom right, #1e4580, #153355, #281b58);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 8px rgba(84, 110, 192, 0.24);
+  border: 1.5px solid #6e5bb380;
+}
+
+.signinBox {
+  float: left;
+  width: calc(50% - 2px);
+  margin-top: 20px;
+  height: fit-content;
+  /* border: 1px solid rgb(0, 255, 13); */
+}
+
+.signinBox h1 {
+  font-size: 30px;
+  color: white;
+  font-family: var(--baseFont);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+
+  /* border: 1px solid rgb(0, 162, 255); */
+}
+.signinBox h1 span {
+  color: #cca360;
+}
+
+.signinBox form {
+  width: calc(100% - 0px);
+}
+
+.textfield__label {
+  color: rgb(187, 187, 187) !important;
+}
+
+.signinBox form .rows {
+  width: calc(80% - 0px);
+  margin: 25px auto;
+  margin-left: 20px;
+  display: flow-root;
+
+  /* border: 1px solid rgb(255, 0, 221); */
+}
+
+.signinBox form .rows_last {
+  margin-top: 40px;
+}
+
+.signinBox form .rows_btn {
+  width: fit-content;
+  margin-right: 10px;
+  float: right;
+
+  /* border: 1px solid rgb(255, 0, 221); */
+}
+.signinBox form .rows_switch {
+  width: fit-content;
+  margin-left: 10px;
+  float: left;
+
+  /* border: 1px solid rgb(255, 0, 221); */
+}
+
+.signinBox form .submit_btn {
+  background-color: #dfb066;
+  color: #1b374b;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s linear;
+  font-family: var(--baseFont);
+}
+
+.signinBox form .submit_btn:hover {
+  background-color: #e2af5c;
+  box-shadow: 0.5px 0.5px 10px 2px #ffffff2f;
+  transition: all 0.2s linear;
+}
+
+.signinBox form .rows div div {
+  width: calc(85% - 0px);
+  color: white;
+  background-color: transparent;
+}
+
+/* LOGO */
+
+.Banner {
+  float: left;
+  width: calc(50% - 2px);
+  height: fit-content;
+
+  /* border: 1px solid rgb(0, 255, 13); */
+}
+
+.Banner img {
+  display: block;
+  width: calc(80% - 0px);
+  margin: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .loginBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+  .signinBox {
+    width: 100%;
+  }
+  .signinBox form {
+    margin-left: 80px;
+  }
+  .Banner {
+    width: 80%;
+  }
+  .signinBox form .rows_btn {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .loginBox {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loginBox {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 3%;
+  }
+  .signinBox form {
+    margin-left: 30px;
+  }
+  .signinBox form .rows {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}
