@@ -12,6 +12,8 @@ import "../styles/form.css";
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
 
+var CryptoJS = require("crypto-js");
+
 // CALL IT ONCE IN YOUR APP
 if (typeof window !== "undefined") {
   injectStyle();
@@ -77,6 +79,16 @@ export default function FormPage() {
       return;
     }
 
+    // ENCRYPT DATA
+    var ciphertext = CryptoJS.AES.encrypt(
+      JSON.stringify(loginData),
+      "my-secret-key@123"
+    ).toString();
+
+    console.log("Encrypt Data : \n", ciphertext);
+
+
+    // // SEND DATA
     // axios
     //   .post("api/auth/signup", {
     //     email: loginData.email,
