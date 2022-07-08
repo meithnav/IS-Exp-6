@@ -11,7 +11,7 @@
  <img width="323" alt="image" src="https://user-images.githubusercontent.com/66678522/177975093-c0ec4fac-8085-413f-a9ac-ef21f78b52e0.png">
 
 ### 4.	Password Validation
-![Uploading image.png…]()
+<img width="332" alt="image" src="https://user-images.githubusercontent.com/66678522/177976042-be011e23-6488-4f13-a971-57cfbb1d0e8d.png">
 
 ### 5.	SignUp: 
  <img width="326" alt="image" src="https://user-images.githubusercontent.com/66678522/177975030-05f1e931-867c-4429-8b61-51df08a663f3.png">
@@ -20,7 +20,6 @@
 ### 6.	Login:
  <img width="404" alt="image" src="https://user-images.githubusercontent.com/66678522/177975018-1729ab10-6d40-4f6f-a880-cec0f68d0650.png">
 
- 
 ### After successful Login
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/66678522/177975625-52f945cf-2b3b-42b3-b68f-212ca1fabf37.png">
 
-![image](https://user-images.githubusercontent.com/66678522/177974871-ab713df4-2a51-45e3-9a22-af7789b1e1c0.png)
